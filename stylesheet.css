@@ -1,21 +1,15 @@
-/*body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-*/
-
+/*experiment with this part, it seems for now a bit useless*/
 body {
     height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: ;
+    /*justify-content: ;*/
     font-family: Roboto, sans-serif;
-    flex: 1;
+    /*flex: 1;*/
 }
 
+/*the makeup for the header and footer, finished*/
 .header, .footer {
     background-color: #1f2937;
     color: #f9faf8;
@@ -31,11 +25,79 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 .header a{
     text-decoration: none;
     font-size: 18px;
     color: #e5e7eb;
+    margin: 10px;
+}
+
+/* used to get the content to distribute evenly between header and footer*/
+.content {
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.content div {
+    display: flex;
+    flex: 1 1 0;
+}
+
+/*hype section*/
+.hype {
+    align-items: center;
+    background-color: #1f2937;
+    color: #f9faf8;
+    justify-content: space-around;
+}
+
+.bighype {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.smallhype {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.hype img {
+    width: 300px;
+    height: 120px;
+    border: 1px;
+}
+
+.hypetext {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+
+}
+/*quote section, called inspo*/
+div .inspo {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    justify-content: center;
+    align-items: center;
+}
+
+div .inspo .quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    width: 800px;
+    text-wrap: wrap;
+    
+}
+
+div .inspo .quotee {
+    text-align: right;
+    width: 800px;
+    font-weight: bold;
     margin: 10px;
 }
