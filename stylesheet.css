@@ -4,11 +4,23 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    /*justify-content: ;*/
     font-family: Roboto, sans-serif;
-    /*flex: 1;*/
 }
 
+/*button make-up*/
+button {
+    background-color: #3882f6;
+    width: 100px;
+    height: 30px;
+    color: #f9faf8;
+    font-weight: bold;
+    border-radius: 8px;
+    border: #3882f6;
+}
+
+button .b-two {
+    border: #f9faf8;
+}
 /*the makeup for the header and footer, finished*/
 .header, .footer {
     background-color: #1f2937;
@@ -42,41 +54,87 @@ body {
     flex: 1 1 auto;
 }
 
-.content div {
+div {
     display: flex;
     flex: 1 1 0;
 }
 
 /*hype section*/
 .hype {
-    align-items: center;
     background-color: #1f2937;
     color: #f9faf8;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
 }
 
 .bighype {
     font-size: 48px;
     font-weight: bold;
+    width: 400px;
+    margin: 0px;
 }
 
 .smallhype {
     font-size: 18px;
     color: #e5e7eb;
+    width: 400px;
 }
 
 .hype img {
     width: 300px;
     height: 120px;
     border: 1px;
+    display: flex;
 }
 
 .hypetext {
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    justify-content: flex-start;
+    align-self: center;
+    flex: 0 0 90px;
+    margin-bottom: 10px;
 
 }
+/*info section*/
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info .imagery {
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.info .imagery p {
+    width: 110px;
+}
+
+.info .top-up {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: bold;
+    display: flex;
+}
+
+.info .imge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px solid #3882f6;
+}
+
+
 /*quote section, called inspo*/
 div .inspo {
     display: flex;
@@ -100,4 +158,13 @@ div .inspo .quotee {
     width: 800px;
     font-weight: bold;
     margin: 10px;
+}
+/*subskrype section*/
+.join {
+    display: flex;
+    flex-direction: column;
+}
+.jointext {
+    display: flex;
+    flex-direction: column;
 }
